@@ -1,0 +1,24 @@
+# Local virtual environments
+/cleanenv/
+
+# Data folders (keep only the curated CSV)
+/dataset/*
+!/dataset/yolo_aggregated.csv
+
+# Scratch / export artifacts
+/ignore/**
+
+# YOLO generated folders and runs
+YOLO/datasets/*
+YOLO/**/detect*/
+YOLO/**/train*/
+YOLO/**/predict*/
+YOLO/exp*/*
+**/runs/**
+*.pt
+*.pth
+
+# Notebook / IDE clutter
+.ipynb_checkpoints/
+__pycache__/
+*.log
